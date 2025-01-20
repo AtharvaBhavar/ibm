@@ -105,6 +105,7 @@ app.post("/login", (req, res) => {
       expiresIn: "1h",
     });
     return res.json({ token });
+   console.log("logged in successful");
   }
 
   res.status(401).json({ error: "Invalid username or password" });
