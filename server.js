@@ -113,6 +113,7 @@ app.post("/login", (req, res) => {
 // Bulb ON endpoint
 app.post("/bulb/on", authenticateToken, (req, res) => {
   res.json({ message: `Bulb for user ${req.user.username} is turned ON.` });
+console.log("Bulb turned on");
 });
 
 // Bulb OFF endpoint
